@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haolin.contact/sitemap.xml

@@ -1,0 +1,341 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config_ts",
+      "community": 4,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app_tsx",
+      "community": 1,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "delay()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "id": "src_app_delay",
+      "community": 1,
+      "norm_label": "delay()"
+    },
+    {
+      "label": "useLocalClock()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L20",
+      "id": "src_app_uselocalclock",
+      "community": 1,
+      "norm_label": "uselocalclock()"
+    },
+    {
+      "label": "useReveal()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L43",
+      "id": "src_app_usereveal",
+      "community": 1,
+      "norm_label": "usereveal()"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": "L1",
+      "id": "src_main_tsx",
+      "community": 5,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "vite-env.d.ts",
+      "file_type": "code",
+      "source_file": "src/vite-env.d.ts",
+      "source_location": "L1",
+      "id": "src_vite_env_d_ts",
+      "community": 6,
+      "norm_label": "vite-env.d.ts"
+    },
+    {
+      "label": "marker-wipe.tsx",
+      "file_type": "code",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L1",
+      "id": "src_components_marker_wipe_tsx",
+      "community": 2,
+      "norm_label": "marker-wipe.tsx"
+    },
+    {
+      "label": "Stroke()",
+      "file_type": "code",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L33",
+      "id": "components_marker_wipe_stroke",
+      "community": 2,
+      "norm_label": "stroke()"
+    },
+    {
+      "label": "set()",
+      "file_type": "code",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L74",
+      "id": "components_marker_wipe_set",
+      "community": 2,
+      "norm_label": "set()"
+    },
+    {
+      "label": "macbook-scroll-demo.tsx",
+      "file_type": "code",
+      "source_file": "src/components/macbook-scroll-demo.tsx",
+      "source_location": "L1",
+      "id": "src_components_macbook_scroll_demo_tsx",
+      "community": 3,
+      "norm_label": "macbook-scroll-demo.tsx"
+    },
+    {
+      "label": "MacbookScrollDemo()",
+      "file_type": "code",
+      "source_file": "src/components/macbook-scroll-demo.tsx",
+      "source_location": "L3",
+      "id": "components_macbook_scroll_demo_macbookscrolldemo",
+      "community": 3,
+      "norm_label": "macbookscrolldemo()"
+    },
+    {
+      "label": "macbook-scroll.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L1",
+      "id": "src_components_ui_macbook_scroll_tsx",
+      "community": 0,
+      "norm_label": "macbook-scroll.tsx"
+    },
+    {
+      "label": "onLoaded()",
+      "file_type": "code",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L151",
+      "id": "ui_macbook_scroll_onloaded",
+      "community": 0,
+      "norm_label": "onloaded()"
+    },
+    {
+      "label": "onTime()",
+      "file_type": "code",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L159",
+      "id": "ui_macbook_scroll_ontime",
+      "community": 0,
+      "norm_label": "ontime()"
+    },
+    {
+      "label": "onEnded()",
+      "file_type": "code",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L164",
+      "id": "ui_macbook_scroll_onended",
+      "community": 0,
+      "norm_label": "onended()"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L632",
+      "id": "ui_macbook_scroll_cn",
+      "community": 0,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "utils.ts",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L1",
+      "id": "src_lib_utils_ts",
+      "community": 0,
+      "norm_label": "utils.ts"
+    },
+    {
+      "label": "cn()",
+      "file_type": "code",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "id": "lib_utils_cn",
+      "community": 0,
+      "norm_label": "cn()"
+    },
+    {
+      "label": "useCetClock()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L16",
+      "community": 1,
+      "norm_label": "usecetclock()",
+      "id": "src_app_usecetclock"
+    },
+    {
+      "label": "MarkerWipe()",
+      "file_type": "code",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L60",
+      "community": 2,
+      "norm_label": "markerwipe()",
+      "id": "components_marker_wipe_markerwipe"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_delay"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_uselocalclock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_usereveal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_usecetclock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_marker_wipe_tsx",
+      "target": "components_marker_wipe_stroke"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_marker_wipe_tsx",
+      "target": "components_marker_wipe_set"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/marker-wipe.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_marker_wipe_tsx",
+      "target": "components_marker_wipe_markerwipe"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/macbook-scroll-demo.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_macbook_scroll_demo_tsx",
+      "target": "components_macbook_scroll_demo_macbookscrolldemo"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_macbook_scroll_tsx",
+      "target": "lib_utils_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_macbook_scroll_tsx",
+      "target": "ui_macbook_scroll_onloaded"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_macbook_scroll_tsx",
+      "target": "ui_macbook_scroll_ontime"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_macbook_scroll_tsx",
+      "target": "ui_macbook_scroll_onended"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ui/macbook-scroll.tsx",
+      "source_location": "L632",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_ui_macbook_scroll_tsx",
+      "target": "ui_macbook_scroll_cn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/utils.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_lib_utils_ts",
+      "target": "lib_utils_cn"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "6c19d597a4bd54dcc56a7a4d2d110b22abd98989"
+}

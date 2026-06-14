@@ -1,0 +1,316 @@
+@import "tailwindcss";
+
+/* Class-based dark mode — scoped to the Macbook section (.dark wrapper),
+   which is designed for dark styling via Tailwind `dark:` utilities. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================================
+   DESIGN TOKENS  →  Tailwind v4 @theme
+   Extracted system (dylanbrouwer.design, extended variant).
+   Token NAMES are preserved verbatim. The licensed display/body
+   faces (ABC Gravity Variable, Die Grotesk B) are unavailable
+   without their files, so free substitutes load first in each
+   stack and the licensed name sits behind them as a fallback —
+   drop in the real font files and the system upgrades itself.
+   ============================================================ */
+@theme {
+  /* — Colors — */
+  --color-obsidian: #161616;  /* deepest surface, near-black text, badge fills */
+  --color-graphite: #3c3a3e;  /* primary text, default borders — workhorse neutral */
+  --color-slate: #7b7a7c;     /* muted borders, secondary text, card edges */
+  --color-ash: #a2a2a2;       /* nav borders, tertiary text, gradient midstop */
+  --color-mist: #c9c7cc;      /* subtle hairlines, large-heading tinting */
+  --color-fog: #f1f1f1;       /* card surfaces, nav backgrounds, gradient endstop */
+  --color-paper: #f8f8f8;     /* elevated card surfaces, off-white panels */
+  --color-bone: #ffffff;      /* page canvas, card fills, text on dark surfaces */
+  --color-ember: #ff4c24;     /* sole brand accent — image frames, highlight strokes */
+  --color-tangerine: #ff6436; /* badge fills, status indicators — lighter Ember sibling */
+
+  /* — Font families (substitute, licensed) — */
+  --font-abc-gravity-variable: 'Bricolage Grotesque', 'ABC Gravity Variable', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-die-grotesk-b: 'Hanken Grotesk', 'Die Grotesk B', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-ibm-plex-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* — Type scale (size / line-height / tracking) — */
+  --text-caption: 12px;
+  --text-caption--line-height: 1;
+  --text-caption--letter-spacing: -0.12px;
+
+  --text-label: 14px;
+  --text-label--line-height: 1.2;
+  --text-label--letter-spacing: -0.28px;
+
+  --text-body-sm: 17px;
+  --text-body-sm--line-height: 1.3;
+  --text-body-sm--letter-spacing: -0.34px;
+
+  --text-body-lg: 21px;
+  --text-body-lg--line-height: 1.25;
+  --text-body-lg--letter-spacing: -0.42px;
+
+  --text-subheading: 36px;
+  --text-subheading--line-height: 1.1;
+  --text-subheading--letter-spacing: -0.72px;
+
+  --text-heading: 54px;
+  --text-heading--line-height: 1.1;
+  --text-heading--letter-spacing: -1.62px;
+
+  --text-heading-lg: 60px;
+  --text-heading-lg--line-height: 1;
+  --text-heading-lg--letter-spacing: -1.8px;
+
+  --text-display: 274px;
+  --text-display--line-height: 0.74;
+  --text-display--letter-spacing: -5.48px;
+
+  /* — Weights — */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* — Spacing (6px base unit) — */
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-72: 72px;
+  --spacing-96: 96px;
+  --spacing-120: 120px;
+
+  /* — Radius — */
+  --radius-xl: 14.4px;
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+@layer base {
+  :root {
+    /* Surface aliases (level 0→3) */
+    --surface-void: var(--color-obsidian);
+    --surface-bone: var(--color-bone);
+    --surface-paper: var(--color-paper);
+    --surface-fog: var(--color-fog);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-die-grotesk-b);
+    font-weight: 500;
+    background-color: var(--surface-bone);
+    color: var(--color-graphite);
+    /* clip (not hidden) so it doesn't become a scroll container that would
+       defeat position: sticky in the Macbook section */
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-ember);
+    color: var(--color-bone);
+  }
+
+  ::-webkit-scrollbar { width: 9px; }
+  ::-webkit-scrollbar-track { background: var(--color-fog); }
+  ::-webkit-scrollbar-thumb { background: var(--color-ash); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-slate); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================
+   COMPONENTS
+   ============================================================ */
+@layer components {
+  /* Mono instrument label — the recurring "DESIGN BY / V0.9 / CET" voice */
+  .mono {
+    font-family: var(--font-ibm-plex-mono);
+    font-size: var(--text-label);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+  .mono-xs {
+    font-family: var(--font-ibm-plex-mono);
+    font-size: var(--text-caption);
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Viewport-filling display word — token text-display, but clamped so it
+     never overflows narrow viewports. Upper bound = 274px token. */
+  .display-hero {
+    font-family: var(--font-abc-gravity-variable);
+    font-weight: 400;
+    font-size: clamp(58px, 17.5vw, 274px);
+    line-height: 0.74;
+    letter-spacing: -0.025em;
+  }
+
+  .display-md {
+    font-family: var(--font-abc-gravity-variable);
+    font-weight: 400;
+    font-size: clamp(48px, 9vw, 96px);
+    line-height: 0.86;
+    letter-spacing: -0.02em;
+  }
+
+  /* Section heading — Die Grotesk grotesque, heading token */
+  .heading {
+    font-family: var(--font-die-grotesk-b);
+    font-weight: 500;
+    font-size: clamp(34px, 5.4vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+
+  /* Ember photo frame — accent stroke that snaps tighter on hover */
+  .ember-frame {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    outline: 1.5px solid transparent;
+    outline-offset: 6px;
+    transition: outline-color 0.5s ease, outline-offset 0.5s cubic-bezier(.2,.7,.2,1);
+  }
+  .group:hover .ember-frame,
+  .ember-frame:hover {
+    outline-color: var(--color-ember);
+    outline-offset: 10px;
+  }
+
+  /* Placeholder image fill — layered grotesque grey, swap for real <img> */
+  .img-placeholder {
+    background-image:
+      radial-gradient(120% 120% at 0% 0%, var(--color-mist) 0%, transparent 55%),
+      linear-gradient(135deg, var(--color-fog) 0%, var(--color-ash) 100%);
+  }
+
+  /* Status pill */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-6);
+    padding: 7px 12px 6px;
+    border-radius: 999px;
+    background: var(--color-obsidian);
+    color: var(--color-bone);
+  }
+
+  /* Outlined link/button — graphite stroke, radius-xl */
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-12);
+    padding: 14px 22px;
+    border-radius: var(--radius-xl);
+    border: 1.5px solid var(--color-graphite);
+    color: var(--color-graphite);
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+  }
+  .btn-outline:hover {
+    background: var(--color-obsidian);
+    border-color: var(--color-obsidian);
+    color: var(--color-bone);
+  }
+  .btn-outline.on-dark { border-color: var(--color-slate); color: var(--color-bone); }
+  .btn-outline.on-dark:hover { background: var(--color-bone); border-color: var(--color-bone); color: var(--color-obsidian); }
+
+  /* Underline-on-hover nav link */
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -4px;
+    height: 1.5px; width: 0;
+    background: currentColor;
+    transition: width 0.35s cubic-bezier(.2,.7,.2,1);
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  /* Hand-drawn marker underline — strokes in when its .reveal block enters view */
+  .ink-underline { position: relative; display: inline-block; white-space: nowrap; }
+  .ink-underline svg {
+    position: absolute;
+    left: -2%; width: 104%;
+    bottom: -0.26em; height: 0.4em;
+    overflow: visible; pointer-events: none;
+  }
+  .ink-underline path {
+    fill: none;
+    stroke: var(--color-ember);
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
+}
+
+/* ============================================================
+   MOTION
+   ============================================================ */
+
+/* Scroll reveal — staggered via inline --d delay set in markup */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.9s cubic-bezier(.2,.7,.2,1),
+    transform 0.9s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--d, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Marker underline draws once the surrounding reveal block is in view */
+.reveal.is-visible .ink-underline path {
+  animation: ink-draw 0.7s cubic-bezier(.65, 0, .35, 1) 0.45s forwards;
+}
+@keyframes ink-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Marquee */
+@keyframes marquee-x {
+  to { transform: translateX(-50%); }
+}
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee__track {
+  display: inline-flex;
+  will-change: transform;
+  animation: marquee-x 60s linear infinite;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; }
+
+/* Grain / film overlay */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
