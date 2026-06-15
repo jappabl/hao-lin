@@ -15,6 +15,11 @@
     <meta name="theme-color" content="#f8f8f8" />
     <link rel="canonical" href="https://haolin.contact/" />
 
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <!-- Open Graph -->
     <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="Hao Lin" />
@@ -75,14 +80,9 @@
       }
     </script>
 
-    <!-- Fonts: IBM Plex Mono is exact; Bricolage/Hanken stand in for the
-         licensed ABC Gravity Variable + Die Grotesk B. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..600&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Fonts are self-hosted (woff2 in /public/fonts, @font-face in src/fonts.css)
+         to drop the third-party origin and allow a 'self'-only CSP. -->
+
   </head>
 
   <body class="bg-bone text-graphite">

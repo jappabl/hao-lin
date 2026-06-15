@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 /* Class-based dark mode — scoped to the Macbook section (.dark wrapper),
    which is designed for dark styling via Tailwind `dark:` utilities. */

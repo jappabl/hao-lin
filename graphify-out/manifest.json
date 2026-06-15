@@ -4,8 +4,8 @@
     "hash": "be7c33c253331d816c791fa5899cb01c"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/src/App.tsx": {
-    "mtime": 1781477518.8332312,
-    "hash": "9d06006d3dc2cff6b3b49f8616e10d5f"
+    "mtime": 1781485683.464443,
+    "hash": "a2d961ede17b4c79ebe90f5733d701ae"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/src/main.tsx": {
     "mtime": 1781456736.9785078,
@@ -32,8 +32,8 @@
     "hash": "d9837f38cc05303254571985e3164050"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/index.html": {
-    "mtime": 1781478247.313459,
-    "hash": "a6712e95ac55b138f37649c775a81eba"
+    "mtime": 1781482931.1075804,
+    "hash": "a22b2bd16f81c6f35a5f2c3a8bc6b603"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/DESIGN.md": {
     "mtime": 1781458962.5514593,
@@ -50,6 +50,10 @@
   "/Users/hlin/Documents/badminton/code/pwebsite/public/cyber-league.jpg": {
     "mtime": 1781469725.6719098,
     "hash": "cb3e4e51132a4a6b9416ae0974b0afbd"
+  },
+  "/Users/hlin/Documents/badminton/code/pwebsite/public/apple-touch-icon.png": {
+    "mtime": 1781481635.6262882,
+    "hash": "63ce253933cdc9b8922c7eda481e233d"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/portrait.jpg": {
     "mtime": 1781472155.6204026,
@@ -68,8 +72,8 @@
     "hash": "928382083c9d44f128e881d631c51432"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/tolus-dev.png": {
-    "mtime": 1781458821.659103,
-    "hash": "4c0e909436b6089c3ac51f6d629a57b0"
+    "mtime": 1781481391.4534345,
+    "hash": "76b71eda3b8e864925e014d6fd49f4bc"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/og-image.jpg": {
     "mtime": 1781478187.63415,
@@ -79,12 +83,20 @@
     "mtime": 1781468447.7472925,
     "hash": "56044cefcc04ed6373adabe2f05f3037"
   },
+  "/Users/hlin/Documents/badminton/code/pwebsite/public/favicon-32.png": {
+    "mtime": 1781481635.859713,
+    "hash": "468f978382c28592a2496dd8a6ebf572"
+  },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/IMG_1459.png": {
     "mtime": 1781469427.6876645,
     "hash": "16066dc3eb6b0f1d7c996f7afd69548c"
   },
+  "/Users/hlin/Documents/badminton/code/pwebsite/public/favicon.svg": {
+    "mtime": 1781481604.2754185,
+    "hash": "ece27d3a68fb56a24031cca35c6e8cea"
+  },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/tolus-hero.webm": {
-    "mtime": 1781458834.8545134,
-    "hash": "1549a30b3bf9b061161ea36760ee4c66"
+    "mtime": 1781484754.358819,
+    "hash": "892214711e3384ec4bf358b9a6ba1172"
   }
 }

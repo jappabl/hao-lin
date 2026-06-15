@@ -73,12 +73,12 @@ export default function App() {
 
       {/* ====================== NAV ====================== */}
       <header className="fixed top-0 inset-x-0 z-50 border-b border-mist/70 bg-bone/80 backdrop-blur-md">
-        <nav className="mx-auto max-w-[1600px] flex items-center justify-between px-24 py-18">
+        <nav className="relative mx-auto max-w-[1600px] flex items-center justify-between px-24 py-18">
           <a href="#top" className="mono flex items-center gap-6 text-obsidian">
             <span className="text-ember">✳</span> Hao&nbsp;Lin
           </a>
 
-          <div className="hidden md:flex items-center gap-48">
+          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 hidden md:flex items-center gap-48">
             <a href="#highlights" className="mono nav-link text-graphite">Highlights</a>
             <a href="#about" className="mono nav-link text-graphite">About</a>
           </div>
@@ -164,7 +164,7 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-48 gap-y-96">
               <article className="group reveal" style={delay(0)}>
-                <a href="#" className="block">
+                <div className="block">
                   <div className="ember-frame aspect-[4/3]">
                     <img
                       src="/hao-isef.jpg"
@@ -179,11 +179,11 @@ export default function App() {
                     </div>
                     <span className="mono-xs text-ash">01 — ISEF</span>
                   </div>
-                </a>
+                </div>
               </article>
 
               <article className="group reveal" style={delay(120)}>
-                <a href="#" className="block">
+                <div className="block">
                   <div className="ember-frame aspect-[4/3] md:translate-y-72">
                     <img
                       src="/cyber-league.jpg"
@@ -198,11 +198,11 @@ export default function App() {
                     </div>
                     <span className="mono-xs text-ash">02 — NCL</span>
                   </div>
-                </a>
+                </div>
               </article>
 
               <article className="group reveal" style={delay(0)}>
-                <a href="#" className="block">
+                <div className="block">
                   <div className="ember-frame aspect-[4/3]">
                     <img
                       src="/badminton.jpg"
@@ -217,11 +217,11 @@ export default function App() {
                     </div>
                     <span className="mono-xs text-ash">03 — Sport</span>
                   </div>
-                </a>
+                </div>
               </article>
 
               <article className="group reveal" style={delay(120)}>
-                <a href="#" className="block">
+                <div className="block">
                   <div className="ember-frame aspect-[4/3] md:translate-y-72">
                     <img
                       src="/orchestra.jpg"
@@ -236,7 +236,7 @@ export default function App() {
                     </div>
                     <span className="mono-xs text-ash">04 — Music</span>
                   </div>
-                </a>
+                </div>
               </article>
             </div>
           </div>
@@ -322,8 +322,6 @@ export default function App() {
       <footer className="bg-obsidian text-ash border-t border-graphite px-24 py-24">
         <div className="mx-auto max-w-[1600px] flex flex-col sm:flex-row items-center justify-between gap-12 mono-xs">
           <span>© 2026 Hao Lin — All Rights Reserved</span>
-          <span>{clock}</span>
-          <span>Designed &amp; Built · V0.9</span>
         </div>
       </footer>
     </>

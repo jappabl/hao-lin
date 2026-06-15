@@ -3,3 +3,6 @@ dist
 *.local
 .DS_Store
 .superpowers
+
+# raw photo uploads — kept locally, not deployed/committed (optimized copies live in public/)
+original-photos
