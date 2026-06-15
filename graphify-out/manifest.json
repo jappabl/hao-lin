@@ -24,16 +24,16 @@
     "hash": "006aa3b0b7adc4d804906bdf099cc0de"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/src/components/ui/macbook-scroll.tsx": {
-    "mtime": 1781459118.2417336,
-    "hash": "5820aae41b59443529bcf28e02eb1a08"
+    "mtime": 1781489829.2966497,
+    "hash": "de06e3c1dda84cdf8d862ab303b9a722"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/src/lib/utils.ts": {
     "mtime": 1781456620.1651347,
     "hash": "d9837f38cc05303254571985e3164050"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/index.html": {
-    "mtime": 1781482931.1075804,
-    "hash": "a22b2bd16f81c6f35a5f2c3a8bc6b603"
+    "mtime": 1781488475.1413405,
+    "hash": "40150ae0fe6c23f220bd9e6c0a9f75b8"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/DESIGN.md": {
     "mtime": 1781458962.5514593,
@@ -59,14 +59,6 @@
     "mtime": 1781472155.6204026,
     "hash": "fdb88cd375beae9e57a15ff78075bd79"
   },
-  "/Users/hlin/Documents/badminton/code/pwebsite/public/Hao_jumpsmash2.png": {
-    "mtime": 1781470910.7927008,
-    "hash": "61232c21cef000d10b7bde38dc3b3854"
-  },
-  "/Users/hlin/Documents/badminton/code/pwebsite/public/FUJI8246.JPG": {
-    "mtime": 1781471890.2672162,
-    "hash": "473f9cf899978d896e1a543de644bd73"
-  },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/badminton.jpg": {
     "mtime": 1781471040.5213208,
     "hash": "928382083c9d44f128e881d631c51432"
@@ -87,13 +79,21 @@
     "mtime": 1781481635.859713,
     "hash": "468f978382c28592a2496dd8a6ebf572"
   },
-  "/Users/hlin/Documents/badminton/code/pwebsite/public/IMG_1459.png": {
-    "mtime": 1781469427.6876645,
-    "hash": "16066dc3eb6b0f1d7c996f7afd69548c"
-  },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/favicon.svg": {
     "mtime": 1781481604.2754185,
     "hash": "ece27d3a68fb56a24031cca35c6e8cea"
+  },
+  "/Users/hlin/Documents/badminton/code/pwebsite/original-photos/Hao_jumpsmash2.png": {
+    "mtime": 1781470910.7927008,
+    "hash": "61232c21cef000d10b7bde38dc3b3854"
+  },
+  "/Users/hlin/Documents/badminton/code/pwebsite/original-photos/FUJI8246.JPG": {
+    "mtime": 1781471890.2672162,
+    "hash": "473f9cf899978d896e1a543de644bd73"
+  },
+  "/Users/hlin/Documents/badminton/code/pwebsite/original-photos/IMG_1459.png": {
+    "mtime": 1781469427.6876645,
+    "hash": "16066dc3eb6b0f1d7c996f7afd69548c"
   },
   "/Users/hlin/Documents/badminton/code/pwebsite/public/tolus-hero.webm": {
     "mtime": 1781484754.358819,

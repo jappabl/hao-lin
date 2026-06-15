@@ -74,7 +74,7 @@ export const MacbookScroll = ({
       {/* sticky pin — laptop holds centered in the viewport while you scroll
           through the track; the scrub plays out, then it releases */}
       <div className="sticky top-0 flex h-screen w-full flex-col items-center justify-center overflow-hidden">
-        <div className="flex scale-[0.35] transform flex-col items-center justify-center [perspective:800px] sm:scale-50 md:scale-100">
+        <div className="flex scale-[0.6] transform flex-col items-center justify-center [perspective:800px] sm:scale-[0.7] md:scale-100">
       <motion.h2
         style={{
           translateY: textTransform,
