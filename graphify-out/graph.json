@@ -34,7 +34,7 @@
       "label": "useLocalClock()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L20",
+      "source_location": "L16",
       "id": "src_app_uselocalclock",
       "community": 1,
       "norm_label": "uselocalclock()"
@@ -43,7 +43,7 @@
       "label": "useReveal()",
       "file_type": "code",
       "source_file": "src/App.tsx",
-      "source_location": "L43",
+      "source_location": "L39",
       "id": "src_app_usereveal",
       "community": 1,
       "norm_label": "usereveal()"
@@ -337,5 +337,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "37db245817eae92bdf8b38e6afd6b2ac1696c434"
+  "built_at_commit": "73c58d784075f3fb88a28aed5ce30cbc3ead5941"
 }

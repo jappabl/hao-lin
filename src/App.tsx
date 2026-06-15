@@ -12,10 +12,6 @@ const subheading: React.CSSProperties = {
 };
 const bodySm: React.CSSProperties = { fontSize: "var(--text-body-sm)" };
 
-/* Hero ticker words. Repeated enough times that one loop-unit always exceeds the
-   viewport, so the -50% marquee loop stays continuous with no gap. */
-const TICKER = ["MAKING THINGS", "RESEARCH", "CYBERSECURITY", "BADMINTON", "ORCHESTRA"];
-
 /* Live Manhattan Beach clock — PST/PDT resolved automatically by the runtime */
 function useLocalClock() {
   const [t, setT] = useState("00:00 PT");
@@ -133,22 +129,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* ====================== MARQUEE ====================== */}
-        <div className="marquee bg-bone text-slate py-12 border-y border-mist">
-          {/* track = loop-unit duplicated; the keyframe shifts exactly -50% for a seamless loop */}
-          <div className="marquee__track">
-            {Array.from({ length: 2 }).flatMap((_, half) =>
-              Array.from({ length: 4 }).flatMap((_, rep) =>
-                TICKER.map((word, i) => (
-                  <span key={`${half}-${rep}-${i}`} className="mono px-12">
-                    {word}
-                    <span className="px-12 text-ember">✳</span>
-                  </span>
-                )),
-              ),
-            )}
-          </div>
-        </div>
+        {/* ============ SILVER BAR (sleek divider artifact) ============ */}
+        <div className="silver-bar" aria-hidden="true"></div>
 
         {/* ====================== MACBOOK (scroll-scrubbed) ====================== */}
         <section className="dark relative bg-obsidian">

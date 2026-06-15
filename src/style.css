@@ -290,20 +290,78 @@
   to { stroke-dashoffset: 0; }
 }
 
-/* Marquee */
-@keyframes marquee-x {
-  to { transform: translateX(-50%); }
-}
-.marquee {
+/* Sleek silver bar — polished metal divider between hero and the MacBook section */
+.silver-bar {
+  position: relative;
+  height: 26px;
+  width: 100%;
   overflow: hidden;
-  white-space: nowrap;
+  /* brushed silver — no specular line; uneven sheen patches for a natural, slightly imperfect surface */
+  background:
+    linear-gradient(
+      94deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.05) 14%,
+      rgba(255, 255, 255, 0.12) 31%,
+      rgba(0, 0, 0, 0.04) 46%,
+      rgba(255, 255, 255, 0.07) 58%,
+      rgba(0, 0, 0, 0.06) 73%,
+      rgba(255, 255, 255, 0.11) 86%,
+      rgba(0, 0, 0, 0.04) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #e6e8ea 0%,
+      #d4d7db 26%,
+      #c1c5ca 52%,
+      #b2b6bc 76%,
+      #c6c9cd 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.3),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.04),
+    0 1px 3px rgba(0, 0, 0, 0.28);
 }
-.marquee__track {
-  display: inline-flex;
-  will-change: transform;
-  animation: marquee-x 60s linear infinite;
+/* fine brushed-metal grain */
+.silver-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.05) 0 1px,
+    rgba(255, 255, 255, 0.05) 1px 2px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.55;
+  pointer-events: none;
 }
-.marquee:hover .marquee__track { animation-play-state: paused; }
+/* slow specular glint sweeping across the polished surface */
+.silver-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  transform: translateX(-130%);
+  animation: silver-glint 8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes silver-glint {
+  0% { transform: translateX(-130%); }
+  42%, 100% { transform: translateX(300%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .silver-bar::after { animation: none; opacity: 0; }
+}
 
 /* Grain / film overlay */
 .grain {
