@@ -6,9 +6,9 @@ import MarkerWipe from "@/components/marker-wipe";
 const delay = (ms: number) => ({ "--d": `${ms}ms` }) as React.CSSProperties;
 
 const subheading: React.CSSProperties = {
-  fontSize: "var(--text-subheading)",
-  lineHeight: 1.1,
-  letterSpacing: "-0.72px",
+  fontSize: "clamp(21px, 5.6vw, 36px)",
+  lineHeight: 1.12,
+  letterSpacing: "-0.02em",
 };
 const bodySm: React.CSSProperties = { fontSize: "var(--text-body-sm)" };
 
@@ -154,12 +154,12 @@ export default function App() {
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                   </div>
-                  <div className="flex items-start justify-between mt-24">
+                  <div className="flex items-start justify-between gap-12 mt-24">
                     <div>
                       <h3 className="text-obsidian" style={subheading}>Not When, Where First?</h3>
                       <p className="mono-xs text-slate mt-6">Research · Seismic-Hazard ML</p>
                     </div>
-                    <span className="mono-xs text-ash">01 — ISEF</span>
+                    <span className="mono-xs text-ash shrink-0">01 — ISEF</span>
                   </div>
                 </div>
               </article>
@@ -173,12 +173,12 @@ export default function App() {
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                   </div>
-                  <div className="flex items-start justify-between mt-24 md:translate-y-72">
+                  <div className="flex items-start justify-between gap-12 mt-24 md:translate-y-72">
                     <div>
                       <h3 className="text-obsidian" style={subheading}>2-Person High-School Team</h3>
                       <p className="mono-xs text-slate mt-6">CTF · Top 0.5% Nationally</p>
                     </div>
-                    <span className="mono-xs text-ash">02 — NCL</span>
+                    <span className="mono-xs text-ash shrink-0">02 — NCL</span>
                   </div>
                 </div>
               </article>
@@ -192,12 +192,12 @@ export default function App() {
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                   </div>
-                  <div className="flex items-start justify-between mt-24">
+                  <div className="flex items-start justify-between gap-12 mt-24">
                     <div>
                       <h3 className="text-obsidian" style={subheading}>Badminton</h3>
                       <p className="mono-xs text-slate mt-6">Sport · #5 CIF Southern Section</p>
                     </div>
-                    <span className="mono-xs text-ash">03 — Sport</span>
+                    <span className="mono-xs text-ash shrink-0">03 — Sport</span>
                   </div>
                 </div>
               </article>
@@ -211,12 +211,12 @@ export default function App() {
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                   </div>
-                  <div className="flex items-start justify-between mt-24 md:translate-y-72">
+                  <div className="flex items-start justify-between gap-12 mt-24 md:translate-y-72">
                     <div>
                       <h3 className="text-obsidian" style={subheading}>Orchestra</h3>
                       <p className="mono-xs text-slate mt-6">Music · Chamber Orchestra</p>
                     </div>
-                    <span className="mono-xs text-ash">04 — Music</span>
+                    <span className="mono-xs text-ash shrink-0">04 — Music</span>
                   </div>
                 </div>
               </article>

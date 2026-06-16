@@ -89,6 +89,8 @@ export default function MarkerWipe({
   const eraseClip = useMotionTemplate`inset(0% 0% 0% ${eraseInset}%)`;
   // cover section stays solid until the orange is complete, then drops out
   const coverOpacity = useTransform(p, [0.7, 0.72], [1, 0]);
+  // the revealed section is only interactive once the wipe has uncovered it
+  const revealPointer = useTransform(p, (v) => (v >= 0.96 ? "auto" : "none"));
 
   if (reduced) {
     return (
@@ -112,8 +114,10 @@ export default function MarkerWipe({
         style={{ top: "100vh" }}
       />
       <div className="sticky top-0 h-screen overflow-hidden">
-        {/* reveal target (the final section) */}
-        <div className="absolute inset-0">{reveal}</div>
+        {/* reveal target (the final section) — only clickable once uncovered */}
+        <motion.div className="absolute inset-0" style={{ pointerEvents: revealPointer }}>
+          {reveal}
+        </motion.div>
 
         {/* the section being painted over — hidden once the orange is complete */}
         <motion.div
