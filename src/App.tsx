@@ -269,7 +269,7 @@ export default function App() {
                 </div>
 
                 <a
-                  href="mailto:hlincontacts@gmail.com"
+                  href="mailto:hao@tolus.dev"
                   className="display-hero block mt-24 text-bone hover:text-ember transition-colors reveal"
                   style={delay(80)}
                 >
@@ -279,7 +279,7 @@ export default function App() {
                 <div className="mt-96 grid grid-cols-2 md:grid-cols-4 gap-24 border-t border-graphite pt-24 reveal" style={delay(160)}>
                   <div>
                     <p className="mono-xs text-slate">Email</p>
-                    <a href="mailto:hlincontacts@gmail.com" className="nav-link mt-6 inline-block" style={bodySm}>hlincontacts@gmail.com</a>
+                    <a href="mailto:hao@tolus.dev" className="nav-link mt-6 inline-block" style={bodySm}>hao@tolus.dev</a>
                   </div>
                   <div>
                     <p className="mono-xs text-slate">Social</p>
